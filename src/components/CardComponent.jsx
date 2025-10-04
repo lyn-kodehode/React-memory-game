@@ -12,7 +12,7 @@ export default function CardComponent({ card, rows }) {
   } = useAppContext();
 
   // dynamic card height calculation
-  const boardHeight = 85; //85vh
+  const boardHeight = 80; //85vh
   const boardPadding = 4; //2vh top and bottom
   const rowGap = (rows - 1) * 0.5; //.5vh gaps between rows
   const availableHeight = boardHeight - boardPadding - rowGap;
