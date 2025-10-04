@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   const [flippedCards, setFlippedCards] = useState([]); //temporary array, max 2cards
   const [matchedPairs, setMatchedPairs] = useState([]); //permanent array
   const [isDeckLocked, setIsDeckLocked] = useState(true);
-  const [backColor, setBackColor] = useState(backCards[0]); //default first color in the array
+  const [backColor, setBackColor] = useState(backCards[3]); //default first color in the array
   const [gridSize, setGridSize] = useState(4); //default 4x4 grid
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [isGameCompleted, setIsGameCompleted] = useState(false);

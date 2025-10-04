@@ -58,8 +58,16 @@ export default function Controls() {
         >
           {backCards.map((color, index) => (
             <option key={index} value={color}>
-              {color.split("/").pop().replace("back-", "").replace(".png", "")}
+              {color
+                .split("/")
+                .pop()
+                .replace("back-", "")
+                .replace(".png", "")
+                .split("-")}
             </option>
+            // <option key={index} value={color}>
+            //   {color.split("/").pop().replace("back-", "").replace(".png", "")}
+            // </option>
           ))}
         </select>
       </div>
