@@ -1,0 +1,52 @@
+.cardContainer {
+  /* padding: 0;
+  margin: 0;
+  box-sizing: border-box; */
+  /* height: 8rem; */
+  /* width: 8rem; */
+  /* height: 12rem; */
+  position: relative;
+  margin: 0.25rem;
+  perspective: 1000px;
+  cursor: pointer;
+  /* height: 19.5vh; */
+  /* width: auto; */
+}
+/* .cardImage {
+  height: 100%;
+} */
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+/* .cardBack {
+  transform: rotateY(180deg); 
+} */
+/* Face image - shows the actual game card */
+.faceVisible {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+}
+/* Back image - shows the card back design */
+.backVisible {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  transform: rotateY(0deg);
+}
